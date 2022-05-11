@@ -1,11 +1,11 @@
 {
-    "name": "webserver",
-    "short_name": "webserver",
+    "name": "fitness_webserver",
+    "short_name": "fitness_webserver",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Flutter webserver",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
