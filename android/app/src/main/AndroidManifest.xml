@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.webserver">
+    package="com.example.fitness_webserver">
    <application
-        android:label="webserver"
+        android:label="fitness_webserver"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
