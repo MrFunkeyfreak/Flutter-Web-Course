@@ -1,4 +1,5 @@
 import 'package:fitness_webserver/controllers/menu_controller.dart';
+import 'package:fitness_webserver/controllers/navigation_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,6 +8,7 @@ import 'layout.dart';
 
 void main (){
   Get.put(MenuController());     //registration of the controller
+  Get.put(NavigationController);
   runApp(MyApp());
 }
 

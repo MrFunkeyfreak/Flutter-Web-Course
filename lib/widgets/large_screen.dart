@@ -1,3 +1,5 @@
+import 'package:fitness_webserver/helpers/local_navigator.dart';
+import 'package:fitness_webserver/widgets/side_menu.dart';
 import 'package:flutter/material.dart';
 
 class LargeScreen extends StatelessWidget {
@@ -7,14 +9,13 @@ class LargeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: Container(           //left side row
-          color: Colors.red,
-        )),
+        Expanded(
+          child: SideMenu()
+        ),
         Expanded(                //divided the page into 5 columns (main page)
             flex: 5,
-            child: Container(
-              color: Colors.blue,
-            ))
+            child: localNavigator()
+            )
       ],
     );
   }
