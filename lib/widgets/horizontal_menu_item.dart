@@ -16,7 +16,7 @@ class HorizontalMenuItem extends StatelessWidget {
       onTap: onTap,
       onHover: (value){
         value ?
-        menuController.onHover(itemName!)       //when hovering return item name
+        menuController.onHover(itemName!)       //when it is hovering return item name
         :menuController.onHover("not hovering");    //not hovering return "not hovering"
     },
         child: Obx(() => Container(             //Obx for observing changes
@@ -41,7 +41,7 @@ class HorizontalMenuItem extends StatelessWidget {
               
               Padding(
                 padding: const EdgeInsets.all(16),
-                child: menuController.returnIconFor(itemName!),    //return the icon for the item
+                child: menuController.returnIconFor(itemName!),    //return the icon for the itemName
               ),
               
               if(!menuController.isActive(itemName!))        // not active widget

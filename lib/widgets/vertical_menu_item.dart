@@ -16,9 +16,9 @@ class VerticalMenuItem extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       onHover: (value){
-        value ?
-        menuController.onHover(itemName!)       //when hovering return item name
-            :menuController.onHover("not hovering");    //not hovering return "not hovering"
+        value
+            ? menuController.onHover(itemName!)       //when hovering return item name
+            : menuController.onHover("not hovering");    //not hovering return "not hovering"
       },
       child: Obx(() => Container(
         color: menuController.isHovering(itemName!)

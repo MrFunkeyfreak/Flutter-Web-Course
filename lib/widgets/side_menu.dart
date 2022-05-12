@@ -42,7 +42,6 @@ class SideMenu extends StatelessWidget {
               ],
             ),
 
-            SizedBox(height: 30,),
           ],
         ),
 
@@ -54,8 +53,7 @@ class SideMenu extends StatelessWidget {
             itemName: itemName == AuthenticationPageRoute ? "Log Out" : itemName,
             onTap: () {
               if (itemName == AuthenticationPageRoute) {
-                // TODO :: go to authenticcation page
-
+                // TODO:: go to authentication page
               }
 
               if(!menuController.isActive(itemName)){

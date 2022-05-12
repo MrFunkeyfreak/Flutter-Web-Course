@@ -41,7 +41,7 @@ class MenuController extends GetxController {
   }
 
   Widget _customIcon (IconData icon, String itemName){
-    if(isActive(itemName)) return Icon (icon, size: 22, color: dark,);   //when the item is active, then we return a Widget which is slightly bigger than the other
+    if(isActive(itemName)) return Icon (icon, size: 22, color: dark);   //when the item is active, then we return a Widget which is slightly bigger than the other
     else {
       return Icon(
         icon, color: isHovering(itemName) ? dark : lightGrey,);          //when the item is not active, then we return the icon and when hover, then colour = dark (not hover =  grey)
